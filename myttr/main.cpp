@@ -7,13 +7,10 @@ int main()
 {
   std::string InputFile, OutputFile;
 
-  InputFile = "./data.csv";
-  OutputFile = "./out.csv";
-
-  /*std::cout << "Enter path to input file: ";
+  std::cout << "Enter path to input file: ";
   std::cin >> InputFile;
   std::cout << "Enter path to outnput file: ";
-  std::cin >> OutputFile;*/
+  std::cin >> OutputFile;
 
   Timer timer;
   timer.StartTimer();
