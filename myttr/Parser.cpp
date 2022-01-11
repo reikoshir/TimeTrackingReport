@@ -28,11 +28,13 @@ void Parser::GetData() {
       }
     }
     data.close();
+  } 
+  else {
+    std::cerr << "Can't open file.";
   }
 }
 
-std::vector<std::string> Parser::split_string(std::string s)
-{
+std::vector<std::string> Parser::split_string(std::string s) {
   std::vector<std::string> result;
   char* pTempStr = _strdup(s.c_str());
   char* pWord = strtok(pTempStr, m_delim);
@@ -68,7 +70,7 @@ std::string Parser::GetMonth(std::string YyyyMmDd) {
     ToReturn = MonthName[month - 1] + " " + YyyyMmDd.substr(0, 4);
   }
   else {
-    std::cout << "Incorrect value of month";
+    std::cerr << "Incorrect value of month";
   }
   return ToReturn;
 }
