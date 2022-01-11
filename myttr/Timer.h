@@ -1,14 +1,12 @@
 #include <iostream>
 #include <chrono>
 
-class Timer
-{
+class Timer {
 public:
 
   Timer();
   void StartTimer();
   void StopTimer();
-
   long GetTime()const;
 
 private:
