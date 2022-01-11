@@ -5,8 +5,7 @@
 #include <vector>
 
 
-class Parser
-{
+class Parser {
 public:
   Parser(std::string InputFile, std::string OutputFile);
   void GetData();
