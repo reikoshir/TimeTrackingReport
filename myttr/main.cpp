@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
+
 #include "Timer.h"
 #include "Parser.h"
 
-int main()
-{
+int main() {
   std::string InputFile, OutputFile;
 
   std::cout << "Enter path to input file: ";
